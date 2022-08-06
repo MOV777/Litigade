@@ -1,0 +1,71 @@
+// variables
+// colors
+$primary: #ff6464;
+$secondary: #edf7fa;
+$blue: #00a8cc;
+$dark: #21243d;
+$light: #8695a4;
+
+// container
+$big-container-width: 1032px;
+$container-width: 856px;
+$small-container-width: 682px;
+$container-padding: 18px;
+
+.container {
+   max-width: $container-width + ($container-padding * 2);
+   padding: 0 $container-padding;
+   margin: 0 auto;
+}
+
+.container--big {
+   max-width: $big-container-width + ($container-padding * 2);
+   padding: 0 $container-padding;
+   margin: 0 auto;
+}
+
+.container--small {
+   max-width: $small-container-width + ($container-padding * 2);
+   padding: 0 $container-padding;
+   margin: 0 auto;
+}
+
+// main settings
+
+html {
+   height: 100%;
+}
+
+body {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: "Heebo", sans-serif;
+   line-height: 24px;
+   color: $dark;
+}
+
+a {
+   color: inherit;
+}
+
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
+
+.none {
+   display: none !important;
+}
+
+.main {
+   flex: 1 1 auto;
+}
