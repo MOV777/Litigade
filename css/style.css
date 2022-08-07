@@ -105,41 +105,57 @@ legend {
   display: block;
 }
 
-/* heebo-regular - latin */
+/* open-sans-regular - latin */
 @font-face {
-  font-family: "Heebo";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/heebo-v21-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/heebo-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo-v21-latin-regular.woff2") format("woff2"), url("../fonts/heebo-v21-latin-regular.woff") format("woff"), url("../fonts/heebo-v21-latin-regular.ttf") format("truetype"), url("../fonts/heebo-v21-latin-regular.svg#Heebo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/open-sans-v29-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v29-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v29-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v29-latin-regular.woff") format("woff"), url("../fonts/open-sans-v29-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v29-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
-/* heebo-500 - latin */
+/* open-sans-600 - latin */
 @font-face {
-  font-family: "Heebo";
+  font-family: "Open Sans";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-display: swap;
-  src: url("../fonts/heebo-v21-latin-500.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/heebo-v21-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo-v21-latin-500.woff2") format("woff2"), url("../fonts/heebo-v21-latin-500.woff") format("woff"), url("../fonts/heebo-v21-latin-500.ttf") format("truetype"), url("../fonts/heebo-v21-latin-500.svg#Heebo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/open-sans-v29-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v29-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v29-latin-600.woff2") format("woff2"), url("../fonts/open-sans-v29-latin-600.woff") format("woff"), url("../fonts/open-sans-v29-latin-600.ttf") format("truetype"), url("../fonts/open-sans-v29-latin-600.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
-/* heebo-700 - latin */
+/* open-sans-700 - latin */
 @font-face {
-  font-family: "Heebo";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/heebo-v21-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/heebo-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo-v21-latin-700.woff2") format("woff2"), url("../fonts/heebo-v21-latin-700.woff") format("woff"), url("../fonts/heebo-v21-latin-700.ttf") format("truetype"), url("../fonts/heebo-v21-latin-700.svg#Heebo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/open-sans-v29-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v29-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v29-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v29-latin-700.woff") format("woff"), url("../fonts/open-sans-v29-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v29-latin-700.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
-/* heebo-900 - latin */
+/* martel-700 - latin */
 @font-face {
-  font-family: "Heebo";
+  font-family: "Martel";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-display: swap;
-  src: url("../fonts/heebo-v21-latin-900.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/heebo-v21-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo-v21-latin-900.woff2") format("woff2"), url("../fonts/heebo-v21-latin-900.woff") format("woff"), url("../fonts/heebo-v21-latin-900.ttf") format("truetype"), url("../fonts/heebo-v21-latin-900.svg#Heebo") format("svg"); /* Legacy iOS */
+  src: url("../fonts/martel-v10-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/martel-v10-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/martel-v10-latin-700.woff2") format("woff2"), url("../fonts/martel-v10-latin-700.woff") format("woff"), url("../fonts/martel-v10-latin-700.ttf") format("truetype"), url("../fonts/martel-v10-latin-700.svg#Martel") format("svg"); /* Legacy iOS */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-500.woff") format("woff"), url("../fonts/montserrat-v25-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin-500.svg#Montserrat") format("svg"); /* Legacy iOS */
 }
 .container {
   max-width: 892px;
