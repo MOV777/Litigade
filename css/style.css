@@ -158,20 +158,8 @@ legend {
   src: local(""), url("../fonts/montserrat-v25-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin-500.woff") format("woff"), url("../fonts/montserrat-v25-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin-500.svg#Montserrat") format("svg"); /* Legacy iOS */
 }
 .container {
-  max-width: 892px;
-  padding: 0 18px;
-  margin: 0 auto;
-}
-
-.container--big {
-  max-width: 1068px;
-  padding: 0 18px;
-  margin: 0 auto;
-}
-
-.container--small {
-  max-width: 718px;
-  padding: 0 18px;
+  max-width: 1080px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -183,9 +171,10 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   line-height: 24px;
-  color: #21243d;
+  color: #737373;
 }
 
 a {
