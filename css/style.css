@@ -232,6 +232,11 @@ a {
   padding: 40px;
   border-radius: 5px;
 }
+@media (max-width: 400px) {
+  .appointment-form {
+    padding: 20px;
+  }
+}
 .appointment-form__title {
   font-size: 24px;
   line-height: 32px;
@@ -281,7 +286,7 @@ a {
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
-  .header__top--light {
+  .header__top {
     background: #fff;
   }
 }
@@ -292,13 +297,38 @@ a {
 .header__bottom {
   padding: 50px 0;
 }
+@media (max-width: 768px) {
+  .header__bottom {
+    background: url("../img/header/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .header__row {
   display: flex;
   gap: 120px;
   align-items: center;
 }
+@media (max-width: 930px) {
+  .header__row {
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header__row {
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+  }
+}
 .header__content {
   flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .header__content {
+    text-align: center;
+  }
 }
 .header__title {
   font-weight: 700;
@@ -307,6 +337,24 @@ a {
   letter-spacing: 0.2px;
   color: #252b42;
   margin-bottom: 30px;
+}
+@media (max-width: 930px) {
+  .header__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 .header__text {
   max-width: 530px;
@@ -317,10 +365,26 @@ a {
   line-height: 30px;
   letter-spacing: 0.2px;
 }
+@media (max-width: 768px) {
+  .header__text {
+    max-width: none;
+  }
+}
+@media (max-width: 400px) {
+  .header__text p {
+    font-size: 14px;
+    font-weight: 28;
+  }
+}
 .header__btns {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .header__btns {
+    justify-content: center;
+  }
 }
 .header__btn {
   padding: 10px 36px;
@@ -333,6 +397,13 @@ a {
 .header__form {
   width: 330px;
   flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .header__form {
+    max-width: 330px;
+    width: 100%;
+    flex-shrink: 1;
+  }
 }
 
 .nav {
@@ -406,6 +477,7 @@ a {
     height: 0;
     opacity: 0;
     visibility: hidden;
+    overflow-x: hidden;
   }
   .menu--show {
     height: auto;
