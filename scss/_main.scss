@@ -256,7 +256,7 @@
 }
 .attorneys-item {
    display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
    min-height: 244px;
    background-color: #fff;
    border: 1px solid #eeeeee;
@@ -312,6 +312,111 @@
                opacity: 0.5;
             }
          }
+      }
+   }
+}
+
+// contact
+.contact {
+   &__top {
+      padding: 90px 0;
+      background-image: url("../img/contact/background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      .title {
+         text-align: left;
+      }
+   }
+   &__head {
+      margin-bottom: 40px;
+      @media (max-width: 768px) {
+         max-width: 328px;
+         margin: 0 auto 40px auto;
+      }
+   }
+}
+.contact-form {
+   padding: 0;
+   max-width: 602px;
+   gap: 20px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color: transparent;
+   @media (max-width: 768px) {
+      max-width: 328px;
+      margin: 0 auto;
+   }
+   .appointment-form__group {
+      width: calc(50% - 10px);
+      @media (max-width: 768px) {
+         width: 100%;
+      }
+   }
+   .appointment-form__group--textarea {
+      width: 100%;
+   }
+   .appointment-form__input {
+      background-color: #f9f9f9;
+   }
+
+   .appointment-form__select {
+      background-color: #f9f9f9;
+   }
+   .appointment-form__textarea {
+      width: 100%;
+      height: 140px;
+      background-color: #f9f9f9;
+      resize: none;
+      border: 1px solid $muted-color;
+      border-radius: 5px;
+      padding: 10px 20px;
+      letter-spacing: 0.2px;
+   }
+   &__btn {
+      margin-top: 0;
+      width: auto;
+      @media (max-width: 768px) {
+         width: 100%;
+      }
+   }
+}
+.consultation {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 0;
+   align-items: center;
+   @media (max-width: 768px) {
+      max-width: 328px;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: center;
+   }
+   &__content {
+      @media (max-width: 768px) {
+         margin-bottom: 50px;
+      }
+   }
+   &__title {
+      font-family: "Martel";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: $text-color;
+      margin-bottom: 10px;
+   }
+   &__text {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      @media (max-width: 768px) {
+         max-width: 180px;
+      }
+   }
+   &__btn {
+      @media (max-width: 768px) {
+         width: 100%;
+         text-align: center;
       }
    }
 }

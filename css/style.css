@@ -231,6 +231,9 @@ a {
   background-color: #fff;
   padding: 40px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 @media (max-width: 400px) {
   .appointment-form {
@@ -245,9 +248,6 @@ a {
   color: #252b42;
   font-weight: 700;
   margin-bottom: 35px;
-}
-.appointment-form__group {
-  margin-bottom: 12px;
 }
 .appointment-form__label {
   display: block;
@@ -801,7 +801,7 @@ a {
 
 .attorneys-item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   min-height: 244px;
   background-color: #fff;
   border: 1px solid #eeeeee;
@@ -856,4 +856,119 @@ a {
 }
 .attorneys-item__social li a:hover {
   opacity: 0.5;
+}
+
+.contact__top {
+  padding: 90px 0;
+  background-image: url("../img/contact/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact__top .title {
+  text-align: left;
+}
+.contact__head {
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .contact__head {
+    max-width: 328px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.contact-form {
+  padding: 0;
+  max-width: 602px;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 328px;
+    margin: 0 auto;
+  }
+}
+.contact-form .appointment-form__group {
+  width: calc(50% - 10px);
+}
+@media (max-width: 768px) {
+  .contact-form .appointment-form__group {
+    width: 100%;
+  }
+}
+.contact-form .appointment-form__group--textarea {
+  width: 100%;
+}
+.contact-form .appointment-form__input {
+  background-color: #f9f9f9;
+}
+.contact-form .appointment-form__select {
+  background-color: #f9f9f9;
+}
+.contact-form .appointment-form__textarea {
+  width: 100%;
+  height: 140px;
+  background-color: #f9f9f9;
+  resize: none;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 0.2px;
+}
+.contact-form__btn {
+  margin-top: 0;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .contact-form__btn {
+    width: 100%;
+  }
+}
+
+.consultation {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .consultation {
+    max-width: 328px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .consultation__content {
+    margin-bottom: 50px;
+  }
+}
+.consultation__title {
+  font-family: "Martel";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+.consultation__text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 768px) {
+  .consultation__text {
+    max-width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .consultation__btn {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
