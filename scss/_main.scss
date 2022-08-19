@@ -256,7 +256,7 @@
 }
 .attorneys-item {
    display: flex;
-   flex-wrap: wrap;
+   flex-direction: column;
    min-height: 244px;
    background-color: #fff;
    border: 1px solid #eeeeee;
@@ -275,6 +275,7 @@
       }
    }
    &__body {
+      flex: 1 1 auto;
       display: flex;
       flex-direction: column;
       justify-content: center;

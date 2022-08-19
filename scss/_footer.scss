@@ -1,0 +1,170 @@
+.footer {
+   color: #fff;
+   &__top {
+      background: $dark-background-color;
+   }
+   &__up {
+      padding: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      border-bottom: 1px solid #364067;
+      @media (max-width: 768px) {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
+   &__bottom {
+      background: $background-gradient-1;
+      padding: 25px 0;
+   }
+   &__text {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      @media (max-width: 768px) {
+         text-align: center;
+      }
+   }
+}
+.logo--light {
+   font-family: "Martel";
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0.1px;
+}
+.footer-social {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   &__link {
+      &--fb {
+         svg {
+            path {
+               fill: #335bf5;
+            }
+         }
+      }
+      &--insta {
+         svg {
+            path {
+               fill: #e51f5a;
+            }
+         }
+      }
+      &--twitter {
+         svg {
+            path {
+               fill: #21a6df;
+            }
+         }
+      }
+      &--youtube {
+         svg {
+            path {
+               fill: #e42f08;
+            }
+         }
+      }
+      &:hover {
+         opacity: 0.7;
+      }
+   }
+}
+.footer-nav {
+   padding: 70px 0;
+   display: grid;
+   grid-template-columns: 1fr minmax(auto, 320px);
+   gap: 30px;
+   @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+   }
+   &__lists {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      @media (max-width: 1024px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 768px) {
+         grid-template-columns: 1fr;
+      }
+   }
+   &__title {
+      font-family: "Martel";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      margin-bottom: 20px;
+   }
+   &__item {
+      margin-bottom: 10px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &__link {
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: $muted-color;
+      &:hover {
+         color: #e42f08;
+      }
+   }
+}
+.subscription {
+   &__title {
+      font-family: "Martel";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      margin-bottom: 20px;
+   }
+   &__group {
+      display: flex;
+      margin-bottom: 1px;
+   }
+   &__input {
+      display: block;
+      background-color: #e6e6e6;
+      padding: 15px 20px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: $muted-color;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      width: calc(100% - 117px);
+      &::placeholder {
+         color: $muted-color;
+      }
+   }
+   &__btn {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      background-color: $primary-color;
+      padding: 15px;
+      border: 1px solid #e6e6e6;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 117px;
+   }
+   &__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: $muted-color;
+   }
+}
