@@ -147,6 +147,10 @@
          border-width: 14px 0 14px 24px;
          border-color: transparent transparent transparent #ffffff;
       }
+      transition: 0.2s all ease-in-out;
+      &:hover {
+         background-color: $primary-color;
+      }
    }
 }
 
@@ -310,7 +314,11 @@
       li {
          a {
             &:hover {
-               opacity: 0.5;
+               svg {
+                  path {
+                     fill: $primary-color;
+                  }
+               }
             }
          }
       }

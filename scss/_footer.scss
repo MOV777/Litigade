@@ -69,7 +69,12 @@
          }
       }
       &:hover {
-         opacity: 0.7;
+         transition: 0.2s all ease-in-out;
+         svg {
+            path {
+               fill: $primary-color;
+            }
+         }
       }
    }
 }
@@ -110,6 +115,7 @@
       font-weight: 600;
       letter-spacing: 0.2px;
       color: $muted-color;
+      transition: 0.2s all ease-in-out;
       &:hover {
          color: #e42f08;
       }
@@ -158,6 +164,10 @@
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
       width: 117px;
+      transition: 0.3s all ease-in-out;
+      &:hover {
+         background-color: $hover-color;
+      }
    }
    &__text {
       font-family: "Montserrat";

@@ -181,13 +181,28 @@
    &__link {
       font-weight: 600;
       transition: 0.2s all ease-in-out;
+      position: relative;
       @media (max-width: 768px) {
          font-size: 30px;
          line-height: 45px;
       }
+      &::before {
+         content: "";
+         position: absolute;
+         display: block;
+         width: 0;
+         height: 2px;
+         bottom: -10px;
+         left: 0;
+         background-color: $hover-color;
+         transition: 0.2s all ease-in-out;
+      }
       &:hover {
          color: $hover-color;
-         text-decoration: underline;
+         &::before {
+            width: 80%;
+            transition: 0.2s all ease-in-out;
+         }
          transition: 0.2s all ease-in-out;
       }
    }
@@ -199,5 +214,15 @@
       position: absolute;
       right: 54px;
       margin-top: 0;
+   }
+   &__link {
+      transition: 0.2s all ease-in-out;
+      &:hover {
+         svg {
+            path {
+               fill: $hover-color;
+            }
+         }
+      }
    }
 }
